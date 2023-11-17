@@ -503,4 +503,88 @@
   .treasure .feature-flex {
     margin-top: 0 !important;
   }
+}
+
+.teacher-app {
+  position: relative;
+  max-width: 1440px;
+  margin: 125px auto 0;
+}
+.teacher-app .bg-teach {
+  background-color: #F1F9FE;
+  max-width: 927px;
+  width: 100%;
+  height: 282px;
+  padding: 60px;
+  border-radius: 30px;
+}
+.teacher-app .bg-teach h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+}
+.teacher-app .bg-teach p {
+  color: #5B6575;
+  margin-top: 14px;
+  max-width: 359px;
+}
+.teacher-app .image {
+  position: absolute;
+  top: 64px;
+  right: 130px;
+}
+.teacher-app .image .ibu {
+  position: absolute;
+  top: -100px;
+  right: -100px;
+  width: 250px;
+}
+.teacher-app .image .segitiga {
+  position: absolute;
+  bottom: 30px;
+  right: -90px;
+  width: 150px;
+  z-index: -1;
+}
+.teacher-app .image img {
+  width: 580px;
+}
+
+.less-app {
+  background-color: #19406C;
+  text-align: center;
+  height: 985px;
+  margin-top: -109px;
+}
+.less-app h1 {
+  color: #fff;
+  max-width: 760px;
+  margin: 0 auto;
+}
+.less-app p {
+  color: #fff;
+  max-width: 693px;
+  margin: 22px auto 28px;
+}
+.less-app button {
+  width: 301px;
+  margin: 0 auto;
+}
+.less-app .less-bg {
+  max-width: 1440px;
+  padding-top: 364px;
+  height: 100%;
+  margin: 0 auto;
+  background-image: url("../gambars/bg-less.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+}
+.less-app .less-bg .ornament {
+  position: absolute;
+  top: 191px;
+  left: 128px;
+  width: 321px;
+  z-index: -1;
 }/*# sourceMappingURL=nav-banner.css.map */
