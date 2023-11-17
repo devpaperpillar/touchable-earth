@@ -76,7 +76,11 @@ button{
 .container{
   max-width: calc(1440px - 130px * 2);
   margin: 0 auto;
-  @media screen and (max-width:768px) {
+  @media screen and (max-width:1024px) {
     padding: 0 20px;
   }
+}
+
+#header-content{
+  min-height: 100vh;
 }

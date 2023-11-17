@@ -83,8 +83,12 @@ button {
   max-width: 1180px;
   margin: 0 auto;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .container {
     padding: 0 20px;
   }
+}
+
+#header-content {
+  min-height: 100vh;
 }/*# sourceMappingURL=main.css.map */
