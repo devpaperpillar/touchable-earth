@@ -1,20 +1,36 @@
 #footer {
   background: #303434;
-  height: 775px;
+  min-height: 775px;
   padding-top: 130px;
+  padding-bottom: 108px;
+  overflow: hidden;
+  @media screen and (max-width:768px) {
+    padding-bottom: 34px;
+  }
 
   .footer__content-top{
     display: flex;
     justify-content: space-between;
-    gap: 10px;
+    flex-wrap: wrap;
+    gap: 100px;
     border-bottom: 1px solid rgb(255, 255, 255, 0.15);
     padding-bottom: 70px;
-
+    @media screen and (max-width:768px) {
+      padding-bottom: 60px;
+    }
     & > section:last-child{
       display: flex;
       justify-content: space-between;
+      flex-wrap: wrap;
       gap: 75px;
+      @media screen and (max-width:768px) {
+        padding-bottom: 50px;
+      }
       section{
+        p{
+          color: #FFF;
+          opacity: 0.5;
+        }
         &:first-child{
           img{
             margin-bottom: 21px;
@@ -36,6 +52,57 @@
   }
   
   .footer__content-bottom{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    .footer__content-bottom__logo{
+      margin-top: 32px;
+    }
+    .footer__content-bottom__rigthside{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 115px;
+      margin-top: 40px;
 
+      @media screen and (max-width:768px) {
+        margin-top: 0;
+        padding-bottom: 30px;
+        gap: 37px;
+      }
+
+      .footer__navigation{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 129px;
+        section{
+          display: flex;
+          flex-direction: column;
+          gap: 11px;
+          a{
+            font-size: 14px;
+            color: #FFF;
+            font-weight: 700;
+            opacity: 0.6;
+          }
+        }
+      }
+
+      .footer__social-media{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        a{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 48px;
+          height: 48px;
+          border-radius: 100%;
+          background-color: rgba(255, 255, 255,0.1);
+        }
+      }
+    }
   }
 }
