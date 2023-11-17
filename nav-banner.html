@@ -8,10 +8,200 @@
     <link rel="stylesheet" href="./assets/styles/nav-banner.css" />
   </head>
   <body id="homepage">
-    <article class="header-content" id="header-content">
-      <h1>Meet Your New teacher</h1>
-      <p>The first web-app where kids teach kids about the world. craft engaging lesson plans across subjects with a few clicks</p>
-      <button class="button--pink">Join Waitlist</button>
-    </article>
+    <div class="nb-container">
+      <article class="header-content" id="header-content">
+        <h1>Meet Your New teacher</h1>
+        <p>The first web-app where kids teach kids about the world. craft engaging lesson plans across subjects with a few clicks</p>
+        <button class="button--pink">Join Waitlist</button>
+  
+        <div class="absolute-1">
+          <img src="assets/gambars/anak-sepatu.png" alt="Touchable Earth" class="anak-sepatu">
+          <img src="assets/gambars/unesco.svg" alt="Touchable Earth" class="unesco">
+        </div>
+        <div class="absolute-3">
+          <img src="assets/gambars/anak-rame.png" alt="Touchable Earth" class="anak-rame">
+          <img src="assets/gambars/communities25.svg" alt="Touchable Earth" class="communities">
+        </div>
+        <div class="absolute-2">
+          <img src="assets/gambars/anak-halo.png" alt="Touchable Earth" class="anak-halo">
+          <img src="assets/gambars/earth.svg" alt="Touchable Earth" class="earth">
+        </div>
+      </article>
+
+      <article class="earth-difference">
+        <h1>The Touchable Earth Difference</h1>
+        <p>Experience the world in-first person and access 25 communities from around the world.</p>
+        <button class="button--pink">Join Waitlist</button>
+
+        <div class="section-video">
+            <img src="assets/gambars/barong.svg" alt="Touchable Earth" class="barong">
+            <img src="assets/gambars/star.svg" alt="Touchable Earth" class="star">
+            <img src="assets/gambars/topi.svg" alt="Touchable Earth" class="topi">
+            <div class="video-box relative">
+                <div class="video-controls hidden" id="video-controls">
+                    <button data-title="Play (k)" id="play" class="relative">
+                      <!--
+                        <svg class="playback-icons">
+                          <use href="#play-icon"></use>
+                          <use class="hidden" href="#pause"></use>
+                        </svg>
+                      -->  
+                      
+                      <div class="logo-play">
+                            <div class="logo-inner-play relative">
+                                <img src="./assets/gambars/play-button.svg" alt="">
+                            </div>
+                        </div>
+                    </button>
+                </div>
+                <video width="100%" id="video" controls>
+                    <source src="https://res.cloudinary.com/dnx1gscbm/video/upload/v1700212257/demo_video_-_finalv_1_cje16r.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+      </article>
+
+      <article class="feature-benefits">
+        <h1>Features & Benefits</h1>
+        <div class="container">
+          <div class="feature-flex">
+            <div class="text">
+              <h2>Bite-sized video lessons</h2>
+              <p>Plug-and-play video lessons aligned with your curriculum that show daily life, traditions, games, and so much in over 25 communities from around the world.</p>
+            </div>
+            <div class="image">
+              <img src="assets/gambars/feature-cowp.png" alt="Touchable Earth">
+              <img src="assets/gambars/flower.svg" alt="Touchable Earth" class="flower">
+            </div>
+          </div>
+          <div class="feature-flex mobile-m">
+            <div class="image">
+              <img src="assets/gambars/feature-cewe.png" alt="Touchable Earth">
+            </div>
+            <div class="text">
+              <h2>Blended classroom</h2>
+              <p>Gamified activities that hone cross-disciplinary skills allow students to learn independently in-n-out of the classroom!</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="list">
+        <div class="container">
+          <div class="list-background">
+            <img src="assets/gambars/mosque.svg" alt="Touchable Earth" class="mosque">
+            <img src="assets/gambars/music.svg" alt="Touchable Earth" class="music">
+            <div class="item">
+              <div class="icon">
+                <img src="assets/gambars/list-1.svg" alt="Touchable Earth">
+              </div>
+              <p>Use across subjects (geography, social studies, history, world languages</p>
+            </div>
+            <div class="item">
+              <div class="icon">
+                <img src="assets/gambars/list-2.svg" alt="Touchable Earth">
+              </div>
+              <p>25+ places and more added every term</p>
+            </div>
+            <div class="item">
+              <div class="icon">
+                <img src="assets/gambars/list-3.svg" alt="Touchable Earth">
+              </div>
+              <p>Gamified activities + leaderboard!</p>
+            </div>
+            <div class="item">
+              <div class="icon">
+                <img src="assets/gambars/list-4.svg" alt="Touchable Earth">
+              </div>
+              <p>Flipped classroom philosophy</p>
+            </div>
+            <div class="item">
+              <div class="icon">
+                <img src="assets/gambars/list-5.svg" alt="Touchable Earth">
+              </div>
+              <p>Similarities over differences</p>
+            </div>
+            <div class="item">
+              <div class="icon">
+                <img src="assets/gambars/list-6.svg" alt="Touchable Earth">
+              </div>
+              <p>Curriculum-aligned</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="feature-benefits treasure">
+        <div class="container">
+          <div class="feature-flex mobile-m">
+            <div class="image">
+              <img src="assets/gambars/treasure.png" alt="Touchable Earth">
+            </div>
+            <div class="text">
+              <h2>Treasure trove</h2>
+              <p>Craft the perfect lesson plan for your classroom in minutes: clips, group activities, discussion points, definitions, external resources and so much more</p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+
+
+    <script>
+      const video = document.getElementById('video');
+      const videoControls = document.getElementById('video-controls');
+
+      const videoWorks = !!document.createElement('video').canPlayType;
+      if (videoWorks) {
+          video.controls = false;
+          videoControls.classList.remove('hidden');
+      }
+
+      const playButton = document.getElementById('play');
+      function togglePlay() {
+              if (video.paused || video.ended) {
+                  video.play();
+              } else {
+                  video.pause();
+              }
+          }
+      // Add eventlisteners here
+      playButton.addEventListener('click', togglePlay);
+
+      const playbackIcons = document.querySelectorAll('.playback-icons use');
+      function updatePlayButton() {
+          playbackIcons.forEach(icon => icon.classList.toggle('hidden'));
+      }
+      video.addEventListener('play', updatePlayButton);
+      video.addEventListener('pause', updatePlayButton);
+
+      function updatePlayButton() {
+          playbackIcons.forEach(icon => icon.classList.toggle('hidden'));
+
+          if (video.paused) {
+              playButton.classList.add("play");
+              playButton.classList.remove("pause");
+          } else {
+              playButton.classList.add("pause");
+              playButton.classList.remove("play");
+          }
+      }
+
+      function openCity(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+              tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+              tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+      }
+  </script>
+
+
   </body>
 </html>

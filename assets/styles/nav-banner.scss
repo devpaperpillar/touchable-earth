@@ -1,11 +1,437 @@
+.nb-container{
+    max-width: 100vw;
+    overflow: hidden;
+}
 .header-content{
-    margin: 128px 0 0;
+    padding: 200px 0 0;
     position: relative;
+    text-align: center;
+    background-image: url('../gambars/bg-banner.svg');
+    max-width: 1440px;
+    margin: 0 auto;
+    @media(min-width: 1200px){
+        min-height: 810px;
+    }
+    @media(max-width: 768px){
+        padding: 115px 20px 0;
+    }
+    &::after{
+        content: '';
+        width: 378.707px;
+        height: 1124.923px;
+        transform: rotate(135deg);
+        flex-shrink: 0;
+        border-radius: 500px;
+        opacity: 0.1;
+        background: #F05283;
+        position: absolute;
+        top: 100px;
+        left: -80px;
+        z-index: -1;
+    }
+    &::before{
+        content: '';
+        border-radius: 500px;
+        opacity: 0.1;
+        background: #6EBBED;
+        width: 378.707px;
+        height: 1119.18px;
+        transform: rotate(135deg);
+        flex-shrink: 0;
+        position: absolute;
+        top: -200px;
+        right: 0;
+        z-index: -1;
+    }
     h1{
         font-size: 64px;
         font-style: normal;
         font-weight: 900;
         line-height: 64px;
         color: #303434;
+        max-width: 391px;
+        margin: 0 auto 20px;
+        @media(max-width: 768px){
+            font-size: 40px;
+            line-height: 40px; 
+            max-width: 245px;
+        }
+    }
+    p{
+        color: #5B6575;
+        max-width: 421px;
+        margin: 0 auto;
+        opacity: 0.8;
+        @media(max-width: 768px){
+            font-weight: 500;
+        }
+    }
+    button{
+        width: 301px;
+        margin: 32px auto 0;
+        @media(max-width: 768px){
+            margin: 20px auto 30px;
+            width: 283px;
+        }
+    }
+    .absolute-1{
+        position: absolute;
+        top: 200px;
+        left: -20px;
+        @media(max-width: 768px){
+            position: relative;
+            top: -70px;
+            left: -20px;
+            display: inline-block;
+        }
+        .anak-sepatu{
+            width: 229px;
+            @media(max-width: 768px){
+                display: none;
+            }
+        }
+        .unesco{
+            position: absolute;
+            @media (min-width: 1200px){
+                top: -60px;
+                left: 156px;
+            }
+            @media(max-width: 768px){
+                width: 193px;
+                position: relative;
+                top: 0;
+                left: 0;
+            }
+        }
+    }
+    .absolute-2{
+        position: absolute;
+        bottom: 35px;
+        left: 111px;
+        @media(max-width: 768px){
+            position: relative;
+            top: 0;
+            left: -58px;
+            text-align: left;
+        }
+        .anak-halo{
+            width: 398px;
+            @media(max-width: 768px){
+                width: 227px;
+            }
+        }
+        .earth{
+            position: absolute;
+            bottom: 12px;
+            left: 249px;
+            @media(max-width: 768px){
+                bottom: 12px;
+                left: 136px;
+                width: 200px;
+            }
+        }
+    }
+    .absolute-3{
+        position: absolute;
+        top: 199px;
+        right: -67px;
+        @media(max-width: 768px){
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 120px;
+            display: inline-block;
+        }
+        .anak-rame{
+            width: 461px;
+            @media(max-width: 768px){
+                width: 219px;
+            }
+        }
+        .communities{
+            position: absolute;
+            bottom: -68px;
+            left: 160px;
+            @media(max-width: 768px){
+                width: 118.747px;
+                left: -7px;
+                bottom: -40px;
+            }
+        }
+    }
+}
+
+.earth-difference{
+    padding: 80px 0 0;
+    text-align: center;
+    background-image: url('../gambars/earth-difference.svg');
+    @media(max-width: 768px){
+        padding: 100px 20px 0;
+    }
+    h1{
+        color: #303434;
+        text-align: center;
+        font-size: 52px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 54px;
+        margin: 0 auto;
+        max-width: 410px;
+        @media(max-width: 768px){
+            max-width: 284px;
+            font-size: 36px;
+            line-height: 40px; 
+        }
+    }
+    p{
+        color: #5B6575;
+        margin: 20px auto;
+        max-width: 418px;
+        opacity: 0.8;
+        @media(max-width: 768px){
+            font-weight: 400;
+        }
+    }
+    button{
+        width: 273px;
+        margin: 0 auto;
+    }
+    .section-video{
+        max-width: 1440px;
+        margin: 60px auto 0;
+        position: relative;
+        .barong{
+            position: absolute;
+            top: -200px;
+            left: 87px;
+            z-index: 2;
+            @media(max-width: 768px){
+                width: 99px;
+                top: -50px;
+                left: -15px;
+            }
+        }
+        .star{
+            position: absolute;
+            right: 72px;
+            top: 76px;
+            @media(max-width: 768px){
+                width: 123px;
+                top: 102px;
+                right: -63px;
+            }
+        }
+        .topi{
+            position: absolute;
+            right: 70px;
+            top: 223px;
+            z-index: 2;
+            @media(max-width: 768px){
+                width: 107px;
+                top: 175px;
+                right: -35px;
+            }
+        }
+        .video-box{
+            position: relative;
+            width: 940px;
+            height: 578px;
+            border-radius: 30px;
+            overflow: hidden;
+            margin: 0 auto;
+            @media(max-width: 768px){
+                width: 354px;
+                height: 218px;
+            }
+            video{
+                object-fit: cover;
+                height: 100%;
+            }
+            .video-controls{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                z-index: 1;
+                button{
+                    width: 100%;
+                    height: 100%;
+                    background-color: transparent;
+                    .logo-play{
+                        background-image: url('../gambars/bg-video.png');
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                        background-size: cover;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    .logo-inner-play{
+                        background: rgba(255, 255, 255, 0.2);
+                        width: 159px;
+                        height: 159px;
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin: 0 auto;
+                        @media(max-width: 768px){
+                            width: 133px;
+                            height: 133px;
+                        }
+                        img{
+                            position: relative;
+                            @media(max-width: 768px){
+                                width: 77px;
+                            }
+                        }
+                    }
+                    &.pause{
+                        .logo-play{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.feature-benefits{
+    margin-top: 120px;
+    @media(max-width: 768px){
+        margin-top: 100px;
+    }
+    h1{
+        color: #303434;
+        text-align: center;
+        font-size: 52px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 54px;
+        margin: 0 0;
+        @media(max-width: 768px){
+            font-size: 36px;
+            font-weight: 900;
+            line-height: 40px;
+        }
+    }
+    .feature-flex{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 80px 0 0;
+        @media(max-width: 768px){
+            margin-top: 42px;
+            flex-direction: column;
+            &.mobile-m{
+                margin-top: 77px;
+            }
+        }
+        .text{
+            width: 520px;
+            @media(max-width: 768px){
+                order: 42px;
+                width: 100%;
+                h2{
+                    font-size: 24px;
+                    font-weight: 700;
+                    line-height: 40px;
+                }
+            }
+            p{
+                color: #303434;
+                opacity: 0.8;
+                margin-top: 12px;
+            }
+        }
+        .image{
+            position: relative;
+            @media(max-width: 768px){
+                order: 2;
+                margin-top: 30px;
+            }
+            img{
+                width: 580px;
+                @media(max-width: 768px){
+                    width: 100%;
+                }
+            }
+            .flower{
+                width: 207px;
+                position: absolute;
+                left: -4px;
+                bottom: -62px;
+                @media(max-width: 768px){
+                    width: 143px;
+                    left: -3px;
+                }
+            }
+        }
+    }
+}
+
+.list{
+    margin-top: 120px;
+    &-background{
+        background: rgba(41, 119, 235, 0.1);
+        border-radius: 30px;
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 85px;
+        text-align: center;
+        padding: 80px 100px;
+        @media(max-width: 768px){
+            padding: 18px 15px;
+            text-align: left;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 15px;
+            .item{
+                display: flex;
+                align-items: center;
+                gap: 15px
+            }
+            .icon{
+                img{
+                    width: 60px;
+                }
+            }
+        }
+        p{
+            margin-top: 22px;
+            @media(max-width: 768px){
+                margin: 0;
+                font-size: 16px;
+                line-height: normal;
+            }
+        }
+        .mosque{
+            position: absolute;
+            top: -155px;
+            right: 50px;
+            @media(max-width: 768px){
+                width: 214px;
+                top: -90px;
+                right: 20px;
+            }
+        }
+        .music{
+            position: absolute;
+            bottom: 70px;
+            left: -132px;
+            @media(max-width: 768px){
+                display: none;
+            }
+        }
+    }
+}
+
+.treasure{
+    @media(max-width: 768px){
+        margin-top: 60px;
+        .feature-flex {
+            margin-top: 0 !important;
+        }
     }
 }
