@@ -4,14 +4,41 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <!-- Include anime.js from CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1"></script>
     <link rel="stylesheet" href="./assets/styles/main.css" />
     <link rel="stylesheet" href="./assets/styles/footer.css" />
+    <link rel="stylesheet" href="./assets/styles/navigation.css" />
   </head>
   <body id="homepage">
-    <nav class="navigation"></nav>
-    <article id="header-content">
-      <h1>HELLO WORLD</h1>
-    </article>
+    <div class="navigation__overflow"></div>
+    <nav id="navigation">
+      <div class="navigation__content ">
+        <div class="navigation__container">
+          <div class="navigation__logo">
+            <img
+              src="./assets/images/logo/touchable-earth--black.svg"
+              alt="touchable-earth"
+            />
+            <div class="navigation__button-menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+
+          <div class="navigation__page">
+            <a href="#">Product</a>
+            <a href="#">Why us</a>
+            <a href="#">Resources</a>
+            <a href="#">People</a>
+            <button class="navigation__button-waitlist">Join Waitlist</button>
+          </div>
+          <button class="navigation__button-waitlist">Join Waitlist</button>
+        </div>
+      </div>
+    </nav>
+    <article id="header-content"></article>
     <article id="feature-and-benefit">
       <section class="feature-and-benefit__column-content"></section>
       <section class="feature-and-benefit__column-content"></section>
@@ -36,7 +63,10 @@
               </p>
             </section>
             <section>
-              <img src="./assets/images/logo/unesco-dakar.png" alt="unesco dakar" />
+              <img
+                src="./assets/images/logo/unesco-dakar.png"
+                alt="unesco dakar"
+              />
               <p>
                 Touchable Earth became a partner of UNESCO Dakar in 2015 to
                 promote regional peace building.
@@ -69,18 +99,19 @@
             </nav>
             <section class="footer__social-media">
               <a href="#">
-                <img src="./assets/images/icon/instagram.svg" alt="ig">
+                <img src="./assets/images/icon/instagram.svg" alt="ig" />
               </a>
               <a href="#">
-                <img src="./assets/images/icon/facebook.svg" alt="fb">
+                <img src="./assets/images/icon/facebook.svg" alt="fb" />
               </a>
               <a href="#">
-                <img src="./assets/images/icon/twitter.svg" alt="x">
+                <img src="./assets/images/icon/twitter.svg" alt="x" />
               </a>
             </section>
           </section>
         </article>
       </div>
     </footer>
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>
