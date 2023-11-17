@@ -150,13 +150,14 @@
 }
 
 .navigation__overflow{
-  position: absolute;
   opacity: 0;
   transition: all 0.2s ease;
 }
 body.show-menu{
   overflow: hidden;
   .navigation__overflow{
+    position: fixed;
+    bottom: 0;
     width: 100%;
     height: 100vh;
     opacity: 0.5;
