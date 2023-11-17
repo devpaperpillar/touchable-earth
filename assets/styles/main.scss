@@ -35,6 +35,16 @@ p {
   line-height: 28px; /* 155.556% */
 }
 
+a{
+  color: #303434;
+  font-family: Satoshi;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration: none;
+}
+
 @mixin button {
   display: flex;
   padding: 15px 25px;
