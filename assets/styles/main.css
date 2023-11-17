@@ -66,4 +66,9 @@ p {
   line-height: normal;
   background: #71d569;
   color: #fff;
+}
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
 }/*# sourceMappingURL=main.css.map */
