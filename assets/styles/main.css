@@ -2,6 +2,18 @@ footer {
   background: red;
 }
 
+.header-content {
+  margin: 128px 0 0;
+  position: relative;
+}
+.header-content h1 {
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 64px;
+  color: #303434;
+}
+
 @font-face {
   font-family: Satoshi;
   src: url(../fonts/Satoshi-Bold.ttf);
@@ -36,6 +48,11 @@ p {
   font-style: normal;
   font-weight: 400;
   line-height: 28px; /* 155.556% */
+}
+
+button {
+  border: none;
+  cursor: pointer;
 }
 
 .button--pink {

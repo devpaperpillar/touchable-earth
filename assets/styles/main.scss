@@ -47,7 +47,10 @@ p {
   font-weight: 700;
   line-height: normal;
 }
-
+button{
+  border: none;
+  cursor: pointer;
+}
 .button--pink {
   @include button;
   background: #ee2661;
