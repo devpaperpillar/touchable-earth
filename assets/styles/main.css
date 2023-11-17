@@ -1,1 +1,69 @@
-/*# sourceMappingURL=main.css.map */
+footer {
+  background: red;
+}
+
+@font-face {
+  font-family: Satoshi;
+  src: url(../fonts/Satoshi-Bold.ttf);
+}
+* {
+  font-family: Satoshi;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: #253042;
+  text-align: center;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 54px; /* 103.846% */
+}
+
+h2 {
+  color: #253042;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px; /* 125% */
+}
+
+p {
+  color: #303434;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 155.556% */
+}
+
+.button--pink {
+  display: flex;
+  padding: 15px 25px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 30px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background: #ee2661;
+  color: #fff;
+}
+
+.button--green {
+  display: flex;
+  padding: 15px 25px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 30px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background: #71d569;
+  color: #fff;
+}/*# sourceMappingURL=main.css.map */
