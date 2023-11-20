@@ -10,6 +10,22 @@
     <link rel="stylesheet" href="./assets/styles/footer.css" />
     <link rel="stylesheet" href="./assets/styles/navigation.css" />
     <link rel="stylesheet" href="./assets/styles/nav-banner.css" />
+    <!-- Include to run form modal -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Modal Form styling -->
+    <style>
+      .modal-content {
+          /* background-color: #2776EA; light blue */
+          padding: 20px;
+          border-radius: 15px;
+      }
+      .modal-footer .success-message {
+          display: none;
+          margin-right: 10px;
+          color: green;
+          font-weight: bold;
+      }
+    </style>
   </head>
   <body id="homepage">
     <div class="navigation__overflow"></div>
@@ -33,9 +49,9 @@
             <a href="#">Why us</a>
             <a href="#">Resources</a>
             <a href="#">People</a>
-            <button class="navigation__button-waitlist">Join Waitlist</button>
+            <button class="navigation__button-waitlist" data-toggle="modal" data-target="#formModal">Join Waitlist</button>
           </div>
-          <button class="navigation__button-waitlist">Join Waitlist</button>
+          <button class="navigation__button-waitlist" data-toggle="modal" data-target="#formModal">Join Waitlist</button>
         </div>
       </div>
     </nav>
@@ -43,7 +59,7 @@
       <article class="header-content" id="header-content">
         <h1>Meet Your New teacher</h1>
         <p>The first web-app where kids teach kids about the world. craft engaging lesson plans across subjects with a few clicks</p>
-        <button class="button--pink">Join Waitlist</button>
+        <button class="button--pink" data-toggle="modal" data-target="#formModal">Join Waitlist</button>
   
         <div class="absolute-1">
           <img src="assets/gambars/anak-sepatu.png" alt="Touchable Earth" class="anak-sepatu">
@@ -62,7 +78,7 @@
       <article class="earth-difference">
         <h1>The Touchable Earth Difference</h1>
         <p>Experience the world in-first person and access 25 communities from around the world.</p>
-        <button class="button--pink">Join Waitlist</button>
+        <button class="button--pink" data-toggle="modal" data-target="#formModal">Join Waitlist</button>
 
         <div class="section-video">
             <img src="assets/gambars/barong.svg" alt="Touchable Earth" class="barong">
@@ -213,6 +229,43 @@
 
 
     <article id="testimonial"></article>
+
+    <!-- Section for modal Form -->
+
+    <div class="modal fade" id="formModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalLabel">Enter Your Details To Join The Waitlist</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form id="feedbackForm" action="  https://docs.google.com/forms/d/e/1FAIpQLSf5hpQA3WxfLL7UvYqzwLZoe7_Pj8Myeyqet4rpQ9mqw87MGg/formResponse">
+                <div class="form-group">
+                    <label for="entry.758611329">Email Address *</label>
+                    <input type="text" class="form-control" name="entry.758611329" required>
+                </div>
+                <div class="form-group">
+                    <label for="entry.2005620554">First Name *</label>
+                    <input type="text" class="form-control" name="entry.2005620554"  required>
+                </div>
+                <div class="form-group">
+                    <label for="entry.744487476">Last Name *</label>
+                    <input type="text" class="form-control" name="entry.744487476" required>
+                </div>    
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" id="subButton" form="feedbackForm" class="btn btn-success">Submit</button>
+            <span class="success-message">Success! Your feedback has been sent.</span>
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
     <footer id="footer">
       <div class="container">
         <article class="footer__content-top">
@@ -279,6 +332,46 @@
       </div>
     </footer>
     <script src="./assets/js/main.js"></script>
+    <!-- Included these scripts for modal form -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Script for form action -->
+    <script>
+      document.getElementById('feedbackForm').addEventListener('submit', function(event){
+      // Adding an iframe dynamically to handle the form submission
+      var iframe = document.createElement('iframe');
+      iframe.name = 'hidden_iframe';
+      iframe.style.display = 'none';
+      document.body.appendChild(iframe);
+
+      // Setting the target of the form to the new iframe
+      this.target = 'hidden_iframe';
+
+      // Listen for the load event of the iframe, which indicates form submission is complete
+      iframe.onload = function() {
+        // Show the success message
+        var successMessage = document.querySelector('.modal-footer .success-message ');
+        successMessage.style.display = 'block';
+        var subButton = document.querySelector('.modal-footer #subButton');
+        subButton.style.display = 'none';
+
+
+        // Hide the modal after a delay
+        setTimeout(function(){
+          $('#formModal').modal('hide');
+          successMessage.style.display = 'none'; // Hide the message for next time the modal opens
+        }, 2000);
+
+        // Clean up: remove the iframe after use
+        document.body.removeChild(iframe);
+      };
+    });
+    </script>
+
+
+
     <script>
       const video = document.getElementById('video');
       const videoControls = document.getElementById('video-controls');
