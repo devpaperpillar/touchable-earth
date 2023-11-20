@@ -515,7 +515,7 @@
 }
 
 .less-app{
-    background-color: #19406C;
+    //background-color: #19406C;
     text-align: center;
     height: 985px;
     margin-top: -109px;
@@ -523,8 +523,8 @@
         height: 1200px;
     }
     h1{
-        color: #fff;
-        max-width: 760px;
+        //color: #fff;
+        max-width: 600px;
         margin: 0 auto;
         @media(max-width: 768px){
             font-size: 36px;
@@ -532,7 +532,7 @@
         }
     }
     p{
-        color: #fff;
+        color: #5B6575;
         max-width: 693px;
         margin: 22px auto 28px;
     }
@@ -556,8 +556,8 @@
         .ornament{
             position: absolute;
             top: 191px;
-            left: 128px;
-            width: 321px;
+            left: 46px;
+            width: 309px;
             z-index: -1;
             @media(max-width: 768px){
                 width: 193px;
@@ -578,6 +578,17 @@
         text-align: center;
         border-radius: 30px;
         background-image: url('../gambars/kids-bg.svg');
+        position: relative;
+        .mosque-2{
+            position: absolute;
+            top: -200px;
+            right: 30px;
+            @media(max-width: 768px){
+                width: 199px;
+                top: -91px;
+                right: 20px;
+            }
+        }
         @media(min-width: 1200px){
             height: 396px;
         }
@@ -621,20 +632,18 @@
         }
     }
     .slider{
-        margin-top: 48px;
+        margin: 48px auto 0;
         position: relative;
         z-index: 2;
+        width: 895px;
         @media(max-width: 768px){
-            margin-top: 30px;
+            margin: 30px auto 0;
         }
-        .inner-slider{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 23px;
-            @media(max-width: 768px){
-                gap: 20px;
-            }
+        .slick-track, .slick-list{
+            overflow: unset;
+        }
+        .slick-slide{
+            padding: 0 10px !important;
         }
         .item{
             min-width: 875px;

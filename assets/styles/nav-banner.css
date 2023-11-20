@@ -598,7 +598,6 @@
 }
 
 .less-app {
-  background-color: #19406C;
   text-align: center;
   height: 985px;
   margin-top: -109px;
@@ -609,8 +608,7 @@
   }
 }
 .less-app h1 {
-  color: #fff;
-  max-width: 760px;
+  max-width: 600px;
   margin: 0 auto;
 }
 @media (max-width: 768px) {
@@ -620,7 +618,7 @@
   }
 }
 .less-app p {
-  color: #fff;
+  color: #5B6575;
   max-width: 693px;
   margin: 22px auto 28px;
 }
@@ -647,8 +645,8 @@
 .less-app .less-bg .ornament {
   position: absolute;
   top: 191px;
-  left: 128px;
-  width: 321px;
+  left: 46px;
+  width: 309px;
   z-index: -1;
 }
 @media (max-width: 768px) {
@@ -670,6 +668,19 @@
   text-align: center;
   border-radius: 30px;
   background-image: url("../gambars/kids-bg.svg");
+  position: relative;
+}
+.kids-app .kids-bg .mosque-2 {
+  position: absolute;
+  top: -200px;
+  right: 30px;
+}
+@media (max-width: 768px) {
+  .kids-app .kids-bg .mosque-2 {
+    width: 199px;
+    top: -91px;
+    right: 20px;
+  }
 }
 @media (min-width: 1200px) {
   .kids-app .kids-bg {
@@ -725,25 +736,21 @@
   }
 }
 .testimonial .slider {
-  margin-top: 48px;
+  margin: 48px auto 0;
   position: relative;
   z-index: 2;
+  width: 895px;
 }
 @media (max-width: 768px) {
   .testimonial .slider {
-    margin-top: 30px;
+    margin: 30px auto 0;
   }
 }
-.testimonial .slider .inner-slider {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 23px;
+.testimonial .slider .slick-track, .testimonial .slider .slick-list {
+  overflow: unset;
 }
-@media (max-width: 768px) {
-  .testimonial .slider .inner-slider {
-    gap: 20px;
-  }
+.testimonial .slider .slick-slide {
+  padding: 0 10px !important;
 }
 .testimonial .slider .item {
   min-width: 875px;
