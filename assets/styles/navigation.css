@@ -125,6 +125,9 @@
     display: inline-flex;
   }
 }
+#navigation .navigation__content .navigation__page a {
+  color: #303434;
+}
 #navigation .navigation__content .navigation__button-waitlist {
   display: inline-flex;
   padding: 12px 20px;
