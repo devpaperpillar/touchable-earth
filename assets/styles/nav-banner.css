@@ -756,7 +756,6 @@
   position: relative;
   background-color: #ffffff;
   border-radius: 30px;
-  margin-top: 48px;
   overflow: hidden;
 }
 @media (max-width: 768px) {
