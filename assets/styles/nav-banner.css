@@ -587,4 +587,87 @@
   left: 128px;
   width: 321px;
   z-index: -1;
+}
+
+.kids-app {
+  position: relative;
+  margin-top: -134px;
+}
+.kids-app .kids-bg {
+  background-color: #2776EA;
+  padding: 50px;
+  text-align: center;
+  border-radius: 30px;
+  background-image: url("../gambars/kids-bg.svg");
+}
+@media (min-width: 1200px) {
+  .kids-app .kids-bg {
+    height: 396px;
+  }
+}
+.kids-app .kids-bg h1 {
+  color: #fff;
+  margin: 0 auto;
+}
+.kids-app .kids-bg p {
+  color: #fff;
+  max-width: 582px;
+  margin: 20px auto 28px;
+}
+.kids-app .kids-bg button {
+  width: 319px;
+  margin: 0 auto;
+}
+
+.testimonial {
+  margin-top: 80px;
+  background: linear-gradient(180deg, rgba(230, 243, 252, 0) 0%, #E6F3FC 19.73%);
+}
+.testimonial h1 {
+  text-align: center;
+}
+.testimonial .slider {
+  margin-top: 48px;
+  position: relative;
+  z-index: 2;
+}
+.testimonial .slider .inner-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 23px;
+}
+.testimonial .slider .item {
+  min-width: 875px;
+  height: 392px;
+  padding: 40px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 30px;
+  margin-top: 48px;
+  overflow: hidden;
+}
+.testimonial .slider .item .testi-bg {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.testimonial .slider .item p {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 35px;
+}
+.testimonial .slider .item .title h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+.testimonial .slider .item .title p {
+  font-size: 12px;
+  color: #5B6575;
+  font-weight: 400;
+  line-height: 29px;
 }/*# sourceMappingURL=nav-banner.css.map */

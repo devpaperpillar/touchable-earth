@@ -1,9 +1,10 @@
 #footer {
   background: #303434;
   min-height: 775px;
-  padding-top: 130px;
+  padding-top: 260px;
   padding-bottom: 108px;
   overflow: hidden;
+  margin-top: -132px;
 }
 @media screen and (max-width: 768px) {
   #footer {

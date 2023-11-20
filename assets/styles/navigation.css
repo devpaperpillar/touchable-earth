@@ -5,7 +5,7 @@
   background-color: rgba(255, 255, 255, 0);
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0); /* Initial box shadow */
   transition: all 0.2s ease;
-  z-index: 2;
+  z-index: 9;
 }
 #navigation .navigation__content.navigation--scrolled {
   background-color: rgb(255, 255, 255);
