@@ -197,22 +197,52 @@
           <img src="assets/gambars/ornament-less.png" alt="Touchable" class="ornament">
         </div>
       </article>
-      <!--
 
-        <article class="kids-app">
-          <div class="container">
-            <div class="kids-bg">
-              <h1>Kids Teach Kids About the World</h1>
-              <p>Touchable Earth is the first app where kids teach kids about the world. Taught entirely by school age children in short videos, Touchable Earth promotes tolerance for gender, culture, and identity.</p>
-              <button class="button--green">Join Waitlist</button>
+      <article class="kids-app">
+        <div class="container">
+          <div class="kids-bg">
+            <h1>Kids Teach Kids <br> About the World</h1>
+            <p>Touchable Earth is the first app where kids teach kids about the world. Taught entirely by school age children in short videos, Touchable Earth promotes tolerance for gender, culture, and identity.</p>
+            <button class="button--green">Join Waitlist</button>
+          </div>
+        </div>
+      </article>
+      
+      <article class="testimonial">
+        <h1>Testimonial</h1>
+        <div class="slider">
+          <div class="inner-slider">
+            <div class="item">
+              <img src="assets/gambars/testimonial-red.svg" alt="Touchable" class="testi-bg">
+              <p>Aliquam arcu lorem diam suscipit augue ac ut amet feugiat. Sit commodo ipsum duis urna eu lorem pellentesque nunc. Feugiat sollicitudin lectus venenatis tristique odio. Rhoncus lorem turpis vitae venenatis et aliquet tempor scelerisque massa.</p>
+              <div class="title">
+                <h3>Professor Fernando Reimers</h3>
+                <p>Teacher at High School 21412</p>
+              </div>
+            </div>
+            <div class="item">
+              <img src="assets/gambars/testimonial-red.svg" alt="Touchable" class="testi-bg">
+              <p>Aliquam arcu lorem diam suscipit augue ac ut amet feugiat. Sit commodo ipsum duis urna eu lorem pellentesque nunc. Feugiat sollicitudin lectus venenatis tristique odio. Rhoncus lorem turpis vitae venenatis et aliquet tempor scelerisque massa.</p>
+              <div class="title">
+                <h3>Professor Fernando Reimers</h3>
+                <p>Teacher at High School 21412</p>
+              </div>
+            </div>
+            <div class="item">
+              <img src="assets/gambars/testimonial-red.svg" alt="Touchable" class="testi-bg">
+              <p>Aliquam arcu lorem diam suscipit augue ac ut amet feugiat. Sit commodo ipsum duis urna eu lorem pellentesque nunc. Feugiat sollicitudin lectus venenatis tristique odio. Rhoncus lorem turpis vitae venenatis et aliquet tempor scelerisque massa.</p>
+              <div class="title">
+                <h3>Professor Fernando Reimers</h3>
+                <p>Teacher at High School 21412</p>
+              </div>
             </div>
           </div>
-        </article>
-      -->
+        </div>
+      </article>
     </div>
 
 
-    <article id="testimonial"></article>
+
     <footer id="footer">
       <div class="container">
         <article class="footer__content-top">
@@ -332,6 +362,11 @@
           document.getElementById(cityName).style.display = "block";
           evt.currentTarget.className += " active";
       }
-  </script>
+      $('.multiple-items').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3
+      });
+    </script>
   </body>
 </html>
