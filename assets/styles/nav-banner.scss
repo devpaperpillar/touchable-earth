@@ -80,7 +80,7 @@
         left: -20px;
         @media(max-width: 768px){
             position: relative;
-            top: -70px;
+            top: -40px;
             left: -20px;
             display: inline-block;
         }
@@ -638,6 +638,7 @@
         width: 895px;
         @media(max-width: 768px){
             margin: 30px auto 0;
+            width: 345px;
         }
         .slick-track, .slick-list{
             overflow: unset;
@@ -650,9 +651,9 @@
             height: 392px;
             padding: 40px;
             position: relative;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
+            display: flex !important;
+            flex-direction: column !important;
+            justify-content: space-between !important;
             position: relative;
             background-color: #ffffff;
             border-radius: 30px;
@@ -665,6 +666,9 @@
                 position: absolute;
                 bottom: 0;
                 right: 0;
+                @media(max-width: 768px){
+                    right: -50px;
+                }
             }
             p{
                 font-size: 28px;

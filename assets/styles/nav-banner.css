@@ -94,7 +94,7 @@
 @media (max-width: 768px) {
   .header-content .absolute-1 {
     position: relative;
-    top: -70px;
+    top: -40px;
     left: -20px;
     display: inline-block;
   }
@@ -744,6 +744,7 @@
 @media (max-width: 768px) {
   .testimonial .slider {
     margin: 30px auto 0;
+    width: 345px;
   }
 }
 .testimonial .slider .slick-track, .testimonial .slider .slick-list {
@@ -757,9 +758,9 @@
   height: 392px;
   padding: 40px;
   position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
   position: relative;
   background-color: #ffffff;
   border-radius: 30px;
@@ -775,6 +776,11 @@
   position: absolute;
   bottom: 0;
   right: 0;
+}
+@media (max-width: 768px) {
+  .testimonial .slider .item .testi-bg {
+    right: -50px;
+  }
 }
 .testimonial .slider .item p {
   font-size: 28px;
