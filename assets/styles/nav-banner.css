@@ -696,6 +696,8 @@
 .kids-app .kids-bg h1 {
   color: #fff;
   margin: 0 auto;
+  font-size: 52px;
+  line-height: 54px;
 }
 @media (max-width: 768px) {
   .kids-app .kids-bg h1 {
@@ -704,7 +706,7 @@
   }
 }
 .kids-app .kids-bg p {
-  color: #fff;
+  color: #CDE8F9;
   max-width: 582px;
   margin: 20px auto 28px;
   font-weight: 500 !important;

@@ -601,13 +601,15 @@
         h1{
             color: #fff;
             margin: 0 auto;
+            font-size: 52px;
+            line-height: 54px;
             @media(max-width: 768px){
                 font-size: 32px;
                 line-height: 40px;
             }
         }
         p{
-            color: #fff;
+            color: #CDE8F9;
             max-width: 582px;
             margin: 20px auto 28px;
             font-weight: 500 !important;
