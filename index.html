@@ -60,7 +60,7 @@
     </nav>
     <div class="nb-container">
       <article class="header-content" id="header-content">
-        <h1>Meet Your New teacher</h1>
+        <h1>Meet Your New teachers</h1>
         <p>The first web-app where kids teach kids about the world. craft engaging lesson plans across subjects with a few clicks</p>
         <button class="button--pink" data-toggle="modal" data-target="#formModal">Join Waitlist</button>
   
@@ -79,7 +79,7 @@
       </article>
 
       <article class="earth-difference">
-        <h1>The Touchable Earth Difference</h1>
+        <h1>The touchable.earth Difference</h1>
         <p>Experience the world in-first person and access 25 communities from around the world.</p>
         <button class="button--pink" data-toggle="modal" data-target="#formModal">Join Waitlist</button>
 
@@ -234,15 +234,15 @@
           <div class="inner-slider">
             <div class="item green">
               <img src="assets/gambars/testimonial-green.svg" alt="Touchable" class="testi-bg">
-              <p>Aliquam arcu lorem diam suscipit augue ac ut amet feugiat. Sit commodo ipsum duis urna eu lorem pellentesque nunc. Feugiat sollicitudin lectus venenatis tristique odio. Rhoncus lorem turpis vitae venenatis et aliquet tempor scelerisque massa.</p>
+              <p>touchable.earth is a second passport for every child.  It grants citizenship based on shared values of curiosity and inclusiveness.  I’m a refugee who experienced exclusion first hand based on my political status.  My children are also refugees but in touchable.earth they are first and foremost children – just like yours.</p>
               <div class="title">
-                <h3>Professor Fernando Reimers</h3>
-                <p>Teacher at High School 21412</p>
+                <h3>Khalid Albeih</h3>
+                <p>Cartoonist, Peace Activist</p>
               </div>
             </div>
             <div class="item">
               <img src="assets/gambars/testimonial-red.svg" alt="Touchable" class="testi-bg">
-              <p>Aliquam arcu lorem diam suscipit augue ac ut amet feugiat. Sit commodo ipsum duis urna eu lorem pellentesque nunc. Feugiat sollicitudin lectus venenatis tristique odio. Rhoncus lorem turpis vitae venenatis et aliquet tempor scelerisque massa.</p>
+              <p>The kind of change Touchable Earth makes possible could not be more urgent and critical. It is essential for Peace and Sustainability. School systems around the world have embraced an approach to improvement that is excessively focused on the development of a narrow range of cognitive skills: literacy, numeracy and science. Important as those are they miss the mark. What schools most urgently need is not to get better at achieving the goals of the past, it is to stay relevant in helping students gain the skills that enable them to invent the future, and to do it in a way that appropriately address the challenges of our times. </p>
               <div class="title">
                 <h3>Professor Fernando Reimers</h3>
                 <p>Teacher at High School 21412</p>
@@ -250,7 +250,14 @@
             </div>
             <div class="item blue">
               <img src="assets/gambars/testimonial-blue.svg" alt="Touchable" class="testi-bg">
-              <p>Aliquam arcu lorem diam suscipit augue ac ut amet feugiat. Sit commodo ipsum duis urna eu lorem pellentesque nunc. Feugiat sollicitudin lectus venenatis tristique odio. Rhoncus lorem turpis vitae venenatis et aliquet tempor scelerisque massa.</p>
+              <p>Respect for broader and different cultural values makes possible dialog that might otherwise never happen. I am much encouraged by what I see in the Internet and its applications like touchable.earth.
+              <br>  
+              <br>  
+              As communication and computing infrastructure becomes more affordable and available, they cannot help but unleash the ideas of young minds too young to know “you can’t do that!"
+              <br>
+              <br>  
+              I wish I were eight years old again.            
+              </p>
               <div class="title">
                 <h3>Professor Fernando Reimers</h3>
                 <p>Teacher at High School 21412</p>
@@ -258,6 +265,8 @@
             </div>
             
           </div>
+          <div class="next_caro"><img src="./assets/gambars/next.svg" alt=""></div>
+          <div class="previous_caro"><img src="./assets/gambars/prev.svg" alt=""></div>
         </div>
       </article>
     </div>
@@ -305,7 +314,7 @@
           </section>
           <section>
             <section>
-              <img src="./assets/images/logo/iearn.png" alt="iearn" />
+              <img src="./assets/gambars/iearn.svg" alt="iearn" />
               <p>
                 Through iEARN, over <span>2,000,000</span> students and 50,000
                 educators are connecting in global project-based learning and
@@ -314,7 +323,7 @@
             </section>
             <section>
               <img
-                src="./assets/images/logo/unesco-dakar.png"
+                src="./assets/gambars/unesco-dakar.svg"
                 alt="unesco dakar"
               />
               <p>
@@ -459,6 +468,9 @@
       $('.inner-slider').slick({
         slidesToShow: 1,
         slidesToSlide: 1,
+        dots: false,
+        nextArrow: '.next_caro',
+        prevArrow: '.previous_caro'
       });
     </script>
   </body>
