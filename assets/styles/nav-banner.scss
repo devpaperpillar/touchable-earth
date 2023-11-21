@@ -84,7 +84,7 @@
         }
         .anak-sepatu{
             width: 229px;
-            @media(max-width: 768px){
+            @media(max-width: 1200px){
                 display: none;
             }
         }
@@ -106,7 +106,11 @@
         position: absolute;
         bottom: 35px;
         left: 111px;
-        @media(max-width: 768px){
+        @media(max-width: 1200px){
+            left: 50px;
+            bottom: 0;
+        }
+        @media(max-width: 900px){
             position: relative;
             top: 0;
             left: -58px;
@@ -114,7 +118,7 @@
         }
         .anak-halo{
             width: 398px;
-            @media(max-width: 768px){
+            @media(max-width: 1200px){
                 width: 227px;
             }
         }
@@ -122,7 +126,7 @@
             position: absolute;
             bottom: 12px;
             left: 249px;
-            @media(max-width: 768px){
+            @media(max-width: 1200px){
                 bottom: 12px;
                 left: 136px;
                 width: 200px;
@@ -133,6 +137,9 @@
         position: absolute;
         top: 199px;
         right: -67px;
+        @media(max-width: 1200px){
+            right: -30px;
+        }
         @media(max-width: 768px){
             position: relative;
             top: 0;
@@ -142,7 +149,7 @@
         }
         .anak-rame{
             width: 461px;
-            @media(max-width: 768px){
+            @media(max-width: 1200px){
                 width: 219px;
             }
         }
@@ -150,7 +157,7 @@
             position: absolute;
             bottom: -68px;
             left: 160px;
-            @media(max-width: 768px){
+            @media(max-width: 1200px){
                 width: 118.747px;
                 left: -7px;
                 bottom: -40px;
@@ -203,7 +210,7 @@
             top: -200px;
             left: 87px;
             z-index: 2;
-            @media(max-width: 768px){
+            @media(max-width: 1200px){
                 width: 99px;
                 top: -50px;
                 left: -15px;
@@ -224,7 +231,7 @@
             right: 70px;
             top: 223px;
             z-index: 2;
-            @media(max-width: 768px){
+            @media(max-width: 1200px){
                 width: 107px;
                 top: 175px;
                 right: -35px;
@@ -237,9 +244,9 @@
             border-radius: 30px;
             overflow: hidden;
             margin: 0 auto;
-            @media(max-width: 768px){
-                width: 354px;
-                height: 218px;
+            @media(max-width: 1200px){
+                width: calc(100% - 40px);
+                height: auto;
             }
             video{
                 object-fit: cover;
@@ -273,13 +280,13 @@
                         align-items: center;
                         justify-content: center;
                         margin: 0 auto;
-                        @media(max-width: 768px){
+                        @media(max-width: 1200px){
                             width: 133px;
                             height: 133px;
                         }
                         img{
                             position: relative;
-                            @media(max-width: 768px){
+                            @media(max-width: 1200px){
                                 width: 77px;
                             }
                         }
@@ -297,7 +304,7 @@
 
 .feature-benefits{
     margin-top: 120px;
-    @media(max-width: 768px){
+    @media(max-width: 1200px){
         margin-top: 100px;
     }
     h1{
@@ -319,7 +326,7 @@
         align-items: center;
         justify-content: space-between;
         margin: 80px 0 0;
-        @media(max-width: 768px){
+        @media(max-width: 1200px){
             margin-top: 42px;
             flex-direction: column;
             &.mobile-m{
@@ -328,7 +335,7 @@
         }
         .text{
             width: 520px;
-            @media(max-width: 768px){
+            @media(max-width: 1200px){
                 order: 42px;
                 width: 100%;
                 h2{
@@ -347,13 +354,13 @@
         }
         .image{
             position: relative;
-            @media(max-width: 768px){
+            @media(max-width: 1200px){
                 order: 2;
                 margin-top: 30px;
             }
             img{
                 width: 580px;
-                @media(max-width: 768px){
+                @media(max-width: 1200px){
                     width: 100%;
                 }
             }
@@ -453,14 +460,14 @@
         height: 282px;
         padding: 60px;
         border-radius: 30px;
-        @media(max-width: 768px){
+        @media(max-width: 1200px){
             padding: 20px 20px 116px;
         }
         h2{
             font-size: 40px;
             font-weight: 700;
             line-height: 48px;
-            @media(max-width: 768px){
+            @media(max-width: 1200px){
                 font-size: 32px;
                 font-weight: 700;
             }
@@ -475,7 +482,15 @@
         position: absolute;
         top: 64px;
         right: 130px;
-        @media(max-width: 768px){
+        @media(max-width: 1200px){
+            right: -10px;
+            top: 80px;
+        }
+        @media (max-width: 900px){
+            top: 140px;
+            right: -80px;
+        }
+        @media(max-width: 600px){
             bottom: -221px + 90px;
             left: 40px;
             width: 100%;
@@ -487,7 +502,7 @@
             top: -100px;
             right: -100px;
             width: 250px;
-            @media(max-width: 768px){
+            @media(max-width: 1200px){
                 right: unset;
                 top: unset;
                 bottom: -50px;
@@ -501,7 +516,7 @@
             right: -90px;
             width: 150px;
             z-index: -1;
-            @media(max-width: 768px){
+            @media(max-width: 1200px){
                 right: 50px;
                 bottom: -61px;
                 width: 100px;
@@ -509,7 +524,10 @@
         }
         img{
             width: 580px;
-            @media(max-width: 768px){
+            @media(max-width: 1200px){
+                width: 500px;
+            }
+            @media(max-width: 900px){
                 width: 402px;
             }
         }
@@ -562,7 +580,7 @@
             left: 46px;
             width: 309px;
             z-index: -1;
-            @media(max-width: 768px){
+            @media(max-width: 1200px){
                 width: 193px;
                 left: -30px;
                 bottom: 170px;
@@ -657,7 +675,7 @@
             &:hover{
                 background-color: #253042;
             }
-            @media(max-width: 768px){
+            @media(max-width: 900px){
                 display: none !important;
             }
         }
@@ -676,9 +694,13 @@
             &:hover{
                 background-color: #253042;
             }
-            @media(max-width: 768px){
+            @media(max-width: 900px){
                 display: none !important;
             }
+        }
+        @media(max-width: 900px){
+            width: calc(100% - 40px);
+            margin: 48px auto;
         }
         @media(max-width: 768px){
             margin: 30px auto 0;
@@ -702,7 +724,7 @@
             background-color: #ffffff;
             border-radius: 30px;
             overflow: hidden;
-            @media(max-width: 768px){
+            @media(max-width: 900px){
                 padding: 20px 20px 27px;
                 min-width: 325px;
                 height: 511px;

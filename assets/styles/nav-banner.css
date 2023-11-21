@@ -98,7 +98,7 @@
 .header-content .absolute-1 .anak-sepatu {
   width: 229px;
 }
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .header-content .absolute-1 .anak-sepatu {
     display: none;
   }
@@ -125,7 +125,13 @@
   bottom: 35px;
   left: 111px;
 }
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
+  .header-content .absolute-2 {
+    left: 50px;
+    bottom: 0;
+  }
+}
+@media (max-width: 900px) {
   .header-content .absolute-2 {
     position: relative;
     top: 0;
@@ -136,7 +142,7 @@
 .header-content .absolute-2 .anak-halo {
   width: 398px;
 }
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .header-content .absolute-2 .anak-halo {
     width: 227px;
   }
@@ -146,7 +152,7 @@
   bottom: 12px;
   left: 249px;
 }
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .header-content .absolute-2 .earth {
     bottom: 12px;
     left: 136px;
@@ -157,6 +163,11 @@
   position: absolute;
   top: 199px;
   right: -67px;
+}
+@media (max-width: 1200px) {
+  .header-content .absolute-3 {
+    right: -30px;
+  }
 }
 @media (max-width: 768px) {
   .header-content .absolute-3 {
@@ -170,7 +181,7 @@
 .header-content .absolute-3 .anak-rame {
   width: 461px;
 }
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .header-content .absolute-3 .anak-rame {
     width: 219px;
   }
@@ -180,7 +191,7 @@
   bottom: -68px;
   left: 160px;
 }
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .header-content .absolute-3 .communities {
     width: 118.747px;
     left: -7px;
@@ -241,7 +252,7 @@
   left: 87px;
   z-index: 2;
 }
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .earth-difference .section-video .barong {
     width: 99px;
     top: -50px;
@@ -266,7 +277,7 @@
   top: 223px;
   z-index: 2;
 }
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .earth-difference .section-video .topi {
     width: 107px;
     top: 175px;
@@ -281,10 +292,10 @@
   overflow: hidden;
   margin: 0 auto;
 }
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .earth-difference .section-video .video-box {
-    width: 354px;
-    height: 218px;
+    width: calc(100% - 40px);
+    height: auto;
   }
 }
 .earth-difference .section-video .video-box video {
@@ -324,7 +335,7 @@
   justify-content: center;
   margin: 0 auto;
 }
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .earth-difference .section-video .video-box .video-controls button .logo-inner-play {
     width: 133px;
     height: 133px;
@@ -333,7 +344,7 @@
 .earth-difference .section-video .video-box .video-controls button .logo-inner-play img {
   position: relative;
 }
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .earth-difference .section-video .video-box .video-controls button .logo-inner-play img {
     width: 77px;
   }
@@ -345,7 +356,7 @@
 .feature-benefits {
   margin-top: 120px;
 }
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .feature-benefits {
     margin-top: 100px;
   }
@@ -372,7 +383,7 @@
   justify-content: space-between;
   margin: 80px 0 0;
 }
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .feature-benefits .feature-flex {
     margin-top: 42px;
     flex-direction: column;
@@ -384,7 +395,7 @@
 .feature-benefits .feature-flex .text {
   width: 520px;
 }
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .feature-benefits .feature-flex .text {
     order: 42px;
     width: 100%;
@@ -405,7 +416,7 @@
 .feature-benefits .feature-flex .image {
   position: relative;
 }
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .feature-benefits .feature-flex .image {
     order: 2;
     margin-top: 30px;
@@ -414,7 +425,7 @@
 .feature-benefits .feature-flex .image img {
   width: 580px;
 }
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .feature-benefits .feature-flex .image img {
     width: 100%;
   }
@@ -524,7 +535,7 @@
   padding: 60px;
   border-radius: 30px;
 }
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .teacher-app .bg-teach {
     padding: 20px 20px 116px;
   }
@@ -534,7 +545,7 @@
   font-weight: 700;
   line-height: 48px;
 }
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .teacher-app .bg-teach h2 {
     font-size: 32px;
     font-weight: 700;
@@ -550,7 +561,19 @@
   top: 64px;
   right: 130px;
 }
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
+  .teacher-app .image {
+    right: -10px;
+    top: 80px;
+  }
+}
+@media (max-width: 900px) {
+  .teacher-app .image {
+    top: 140px;
+    right: -80px;
+  }
+}
+@media (max-width: 600px) {
   .teacher-app .image {
     bottom: -131px;
     left: 40px;
@@ -565,7 +588,7 @@
   right: -100px;
   width: 250px;
 }
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .teacher-app .image .ibu {
     right: unset;
     top: unset;
@@ -581,7 +604,7 @@
   width: 150px;
   z-index: -1;
 }
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .teacher-app .image .segitiga {
     right: 50px;
     bottom: -61px;
@@ -591,7 +614,12 @@
 .teacher-app .image img {
   width: 580px;
 }
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
+  .teacher-app .image img {
+    width: 500px;
+  }
+}
+@media (max-width: 900px) {
   .teacher-app .image img {
     width: 402px;
   }
@@ -650,7 +678,7 @@
   width: 309px;
   z-index: -1;
 }
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .less-app .less-bg .ornament {
     width: 193px;
     left: -30px;
@@ -761,7 +789,7 @@
 .testimonial .slider .next_caro:hover {
   background-color: #253042;
 }
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .testimonial .slider .next_caro {
     display: none !important;
   }
@@ -782,9 +810,15 @@
 .testimonial .slider .previous_caro:hover {
   background-color: #253042;
 }
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .testimonial .slider .previous_caro {
     display: none !important;
+  }
+}
+@media (max-width: 900px) {
+  .testimonial .slider {
+    width: calc(100% - 40px);
+    margin: 48px auto;
   }
 }
 @media (max-width: 768px) {
@@ -812,7 +846,7 @@
   border-radius: 30px;
   overflow: hidden;
 }
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .testimonial .slider .item {
     padding: 20px 20px 27px;
     min-width: 325px;
